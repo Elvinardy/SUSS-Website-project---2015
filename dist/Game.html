@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Interactive Game</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--essential line!-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles3.css">
+<script src="js/easel.js"></script>
+<script src="js/game.js"></script>
+<style type="text/css">
+   body { background: #A3A3A3; }
+</style>
+    
+</head>
+<body onload="init();">
+<br><br>
+    <!--navigation bar always stays on top.-->
+<div class = "navbar navbar-inverse navbar-fixed-top"> 
+    <div class = "container">
+        <a href="index.html" class = "navbar-brand">
+        <img src="images/rhino-header.png" width="60%" height="150%"></a>
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>   <!---3 bar icon when collapse screen size-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!--for button to collapse on different screen size-->
+
+   <div class="collapse navbar-collapse navHeaderCollapse"> <!--navHeaderCollapse Class-->
+    <ul class="nav navbar-nav navbar-right">
+       <li class="active"><a href="index.html">Home </a></li>
+       <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">The Black Rhino<b class="caret"></b></a> <!--declare dropdown menu-->
+           <ul class="dropdown-menu"> 
+            <li><a href="Rhino.html">Black Rhino Facts</a></li>
+            <li><a href="Game.html">Interactive Game</a></li>
+            <li><a href="#">Resources</a></li>
+    </ul>
+</li>
+       <li><a href="Contact.html">Contact <span class="glyphicon glyphicon-envelope"></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<br><br><br>
+    
+<div class="container">
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12"><!--column in wide screen-->
+ <h3>Protect the Rhinos from those Poachers!</h3>
+        <h4><b></b>Click on the poachers before they reach and harm the Rhino family!</b></h4>
+    </div>
+    <p>
+	  <canvas id="canvas" width="960" height="580"></canvas>
+    </p>
+       
+
+</div>
+</div>
+</div>
+<br><br><br> <!--add br when columns is blocked by footer-->
+      <div class="navbar navbar-default navbar-fixed-bottom"> <!--create footer-->
+    <div class="container">
+        <p class="navbar-text pull-right">MTD219 | 2015 SIM University | All Rights Reserved</p>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://twitter.com/login"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://plus.google.com/"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+    </div>
+
+<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>Contact details</p>
+            </div>
+            <div class="modal-body">
+            <p>For More Enquiries, please contact +65 91234567 or email at elvinardy001@unisim.edu.sg</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+            <</div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
